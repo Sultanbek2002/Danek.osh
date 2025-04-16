@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
@@ -7,21 +8,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
 
 		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/ticker-style.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/ticker-style.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+            <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
    </head>
 
    <body>
@@ -49,8 +50,8 @@
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left">
                                     <ul>     
-                                        <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                                        <li><img src="assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2019</li>
+                                        <li><img src="{% static 'assets/img/icon/header_icon1.png' %}" alt="">34ºc, Sunny </li>
+                                        <li><img src="{% static 'assets/img/icon/header_icon1.png' %}" alt="">Tuesday, 18th June, 2019</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -87,7 +88,7 @@
                             <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                                 <!-- sticky -->
                                     <div class="sticky-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                        <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
                                     </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -160,7 +161,7 @@
                         <!-- Trending Top -->
                         <div class="trending-top mb-30">
                             <div class="trend-top-img">
-                                <img src="assets/img/trending/trending_top.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/trending_top.jpg' %}" alt="">
                                 <div class="trend-top-cap">
                                     <span>Appetizers</span>
                                     <h2><a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
@@ -173,7 +174,7 @@
                                 <div class="col-lg-4">
                                 <div class="single-bottom mb-35">
                                     <div class="trend-bottom-img mb-30">
-                                        <img src="assets/img/trending/trending_bottom1.jpg" alt="">
+                                        <img src="{% static 'assets/img/trending/trending_bottom1.jpg' %}" alt="">
                                     </div>
                                     <div class="trend-bottom-cap">
                                         <span class="color1">Lifestyple</span>
@@ -184,7 +185,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                            <img src="{% static 'assets/img/trending/trending_bottom2.jpg' %}" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color2">Sports</span>
@@ -195,7 +196,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom3.jpg" alt="">
+                                            <img src="{% static 'assets/img/trending/trending_bottom3.jpg' %}" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color3">Travels</span>
@@ -210,7 +211,7 @@
                     <div class="col-lg-4">
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right1.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/right1.jpg' %}" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">Concert</span>
@@ -219,7 +220,7 @@
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right2.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/right2.jpg' %}" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color3">sea beach</span>
@@ -228,7 +229,7 @@
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right3.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/right3.jpg' %}" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color2">Bike Show</span>
@@ -237,7 +238,7 @@
                         </div> 
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right4.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/right4.jpg' %}" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color4">See beach</span>
@@ -246,7 +247,7 @@
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right5.jpg" alt="">
+                                <img src="{% static 'assets/img/trending/right5.jpg' %}" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">Skeping</span>
@@ -276,7 +277,7 @@
                         <div class="weekly-news-active dot-style d-flex dot-style">
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                    <img src="assets/img/news/weeklyNews2.jpg" alt="">
+                                    <img src="{% static 'assets/img/news/weeklyNews2.jpg' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
                                     <span class="color1">Strike</span>
@@ -285,7 +286,7 @@
                             </div> 
                             <div class="weekly-single active">
                                 <div class="weekly-img">
-                                        <img src="assets/img/news/weeklyNews1.jpg" alt="">
+                                        <img src="{% static 'assets/img/news/weeklyNews1.jpg' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
                                     <span class="color1">Strike</span>
@@ -294,7 +295,7 @@
                             </div>
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                        <img src="assets/img/news/weeklyNews3.jpg" alt="">
+                                        <img src="{% static 'assets/img/news/weeklyNews3.jpg' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
                                     <span class="color1">Strike</span>
@@ -303,7 +304,7 @@
                             </div>
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                    <img src="assets/img/news/weeklyNews1.jpg" alt="">
+                                    <img src="{% static 'assets/img/news/weeklyNews1.jpg' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
                                     <span class="color1">Strike</span>
@@ -356,7 +357,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -367,7 +368,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -378,7 +379,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -389,7 +390,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -407,7 +408,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -418,7 +419,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -429,7 +430,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -440,7 +441,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -458,7 +459,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -469,7 +470,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -480,7 +481,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -491,7 +492,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -509,7 +510,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -520,7 +521,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -531,7 +532,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -542,7 +543,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -560,7 +561,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -571,7 +572,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -582,7 +583,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -593,7 +594,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -611,7 +612,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews1.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -622,7 +623,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews2.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -633,7 +634,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews3.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -644,7 +645,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="assets/img/news/whatNews4.jpg" alt="">
+                                                    <img src="{% static 'assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="color1">Night party</span>
@@ -1047,43 +1048,43 @@
 	<!-- JS here -->
 	
 		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
 		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
+		<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+        <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
 
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/slick.min.js' %}"></script>
         <!-- Date Picker -->
-        <script src="./assets/js/gijgo.min.js"></script>
+        <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
 		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+		<script src="{% static 'assets/js/animated.headline.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
 
         <!-- Breaking New Pluging -->
-        <script src="./assets/js/jquery.ticker.js"></script>
-        <script src="./assets/js/site.js"></script>
+        <script src="{% static 'assets/js/jquery.ticker.js' %}"></script>
+        <script src="{% static 'assets/js/site.js' %}"></script>
 
 		<!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
+        <script src="{% static 'assets/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
         
         <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="{% static 'assets/js/contact.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'assets/js/mail-script.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
         
 		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+        <script src="{% static 'assets/js/plugins.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
         
     </body>
 </html>
