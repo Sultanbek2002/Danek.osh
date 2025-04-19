@@ -1,0 +1,12 @@
+{% load static %}
+{% for i in banner %}
+<div class="trending-top mb-30">
+    <div class="trend-top-img">
+        <img src="{{ i.image.url }}" alt="">
+        <div class="trend-top-cap">
+            <span>{{i.title}}</span>
+            <h2><a href="details.html">{{i.text}}</a></h2>
+        </div>
+    </div>
+</div>
+{% endfor %}
