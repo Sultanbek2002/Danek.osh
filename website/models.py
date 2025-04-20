@@ -36,3 +36,27 @@ class News(models.Model):
         verbose_name = "Новость"
         ordering = ['-created_at']
         
+        
+class AchievCategory(models.Model):
+    title = models.CharField(max_length=255, blank=True, null=True)
+
+    def __str__(self) -> str:
+        return self.title
+    
+    class Meta:
+        verbose_name = "Категория достижения"
+        
+        
+class AchievCategoryProduct(models.Model):
+    category = models.ForeignKey(AchievCategory, on_delete=models.CASCADE, related_name='category')
+    create_in = models.CharField(max_length=255, blank=True, null=True)
+    image=models.ImageField(upload_to='achievements/',default='')
+    author=models.TextField(max_length=255)
+    project_file=models.FileField(upload_to='project_file/')
+    create_at=models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+
+    def __str__(self) -> str:
+        return self.author
+
+    class Meta:
+        verbose_name = "Достижения"

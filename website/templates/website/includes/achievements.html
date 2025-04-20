@@ -1,0 +1,69 @@
+{% load static %}
+<div class="col-lg-8">
+    <div class="row d-flex justify-content-between">
+        <div class="col-lg-3 col-md-3">
+            <div class="section-tittle mb-30">
+                <h3>Достижения</h3>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+            <div class="properties__button">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        {% for category in achiev_categories %}
+                        <a class="nav-item nav-link {% if forloop.first %}active{% endif %}" 
+                           id="nav-{{category.id}}-tab" 
+                           data-toggle="tab" 
+                           href="#nav-{{category.id}}" 
+                           role="tab" 
+                           aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+                            {{category.title}}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="tab-content" id="nav-tabContent">
+                {% for category in achiev_categories %}
+                <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" 
+                     id="nav-{{category.id}}" 
+                     role="tabpanel" 
+                     aria-labelledby="nav-{{category.id}}-tab">
+                    
+                    <div class="whats-news-caption">
+                        <div class="row">
+                            {% for product in category.category.all %}
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single-what-news mb-100">
+                                    <div class="what-img">
+                                        <img src="{{product.image.url}}" alt="{{product.author}}">
+                                    </div>
+                                    <div class="what-cap">
+                                        <span class="color1">{{product.create_in}}</span>
+                                        <h4>
+                                            <a href="{{product.project_file.url}}" target="_blank">
+                                                {{product.author}}<br>
+                                                {{product.create_at|date:"d.m.Y"}}
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                            <div class="col-12">
+                                <p>Нет достижений в этой категории</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
