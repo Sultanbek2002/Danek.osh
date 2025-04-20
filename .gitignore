@@ -48,6 +48,7 @@ venv.bak/
 # Database
 *.db
 *.sqlite
+db.sqlite3
 
 # Static files
 staticfiles/
