@@ -51,3 +51,4 @@ venv.bak/
 
 # Static files
 staticfiles/
+media/
